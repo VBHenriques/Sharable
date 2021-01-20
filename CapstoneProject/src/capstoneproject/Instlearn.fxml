@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #5CDB95;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="capstoneproject.InstlearnController">
+   <children>
+      <Label fx:id="title2" alignment="CENTER" layoutX="200.0" layoutY="127.0" prefHeight="30.0" prefWidth="400.0" text="Label" textFill="#379683">
+         <font>
+            <Font name="Verdana Bold" size="20.0" />
+         </font></Label>
+      <Button fx:id="acceptbut" layoutX="250.0" layoutY="536.0" mnemonicParsing="false" onAction="#changeScreentoConnect" prefHeight="50.0" prefWidth="300.0" style="-fx-border-color: #EDF5E1; -fx-background-color: #379683;" text="Button" textFill="#edf5e1">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font></Button>
+      <GridPane layoutX="100.0" layoutY="170.0" prefHeight="350.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="typeofclasslab" alignment="CENTER" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #379683; -fx-border-color: #8EE4AF;" text="Label" textFill="#edf5e1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font></Label>
+            <Label fx:id="durofclasslab" alignment="CENTER" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #379683; -fx-border-color: #8EE4AF;" text="Label" textFill="#edf5e1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font></Label>
+            <Label fx:id="pricelab" alignment="CENTER" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #379683; -fx-border-color: #8EE4AF;" text="Label" textFill="#edf5e1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font></Label>
+            <Label fx:id="desclab" alignment="CENTER" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: #379683; -fx-border-color: #8EE4AF;" text="Label" textFill="#edf5e1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font></Label>
+            <Label fx:id="datelab" alignment="CENTER" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #379683; -fx-border-color: #8EE4AF;" text="Label" textFill="#edf5e1">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font></Label>
+            <Label fx:id="timelab" alignment="CENTER" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #379683; -fx-border-color: #8EE4AF;" text="Label" textFill="#edf5e1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font></Label>
+            <Label fx:id="date" alignment="CENTER" prefHeight="50.0" prefWidth="300.0" style="-fx-border-color: #379683; -fx-background-color: #ffffff;" text="Label" GridPane.columnIndex="1" />
+            <Label fx:id="time" alignment="CENTER" prefHeight="50.0" prefWidth="300.0" style="-fx-border-color: #379683; -fx-background-color: #ffffff;" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="typeofclass" alignment="CENTER" prefHeight="50.0" prefWidth="300.0" style="-fx-border-color: #379683; -fx-background-color: #ffffff;" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="durofclass" alignment="CENTER" prefHeight="50.0" prefWidth="300.0" style="-fx-border-color: #379683; -fx-background-color: #ffffff;" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="price" alignment="CENTER" prefHeight="50.0" prefWidth="300.0" style="-fx-border-color: #379683; -fx-background-color: #ffffff;" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="descarea" alignment="CENTER" prefHeight="100.0" prefWidth="300.0" style="-fx-border-color: #379683; -fx-background-color: #ffffff;" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <ImageView fx:id="titleimg" fitHeight="100.0" fitWidth="450.0" layoutX="175.0" layoutY="14.0" pickOnBounds="true" />
+      <Button fx:id="homebut" layoutX="175.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeScreenMain" opacity="0.0" prefHeight="100.0" prefWidth="450.0" text="Button" />
+   </children>
+</AnchorPane>

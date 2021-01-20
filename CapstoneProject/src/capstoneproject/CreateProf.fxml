@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #5CDB95;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="capstoneproject.CreateProfController">
+   <children>
+      <GridPane layoutX="82.0" layoutY="125.0" maxHeight="350.0" maxWidth="400.0" prefHeight="400.0" prefWidth="400.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="UNlab" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #379683; -fx-border-color: #8EE4AF;" text="Username:" textFill="#edf5e1">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="PWlab" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #379683; -fx-border-color: #8EE4AF;" text="Password:" textFill="#edf5e1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="FNlab" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #379683; -fx-border-color: #8EE4AF;" text="First Name:" textFill="#edf5e1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="LNlab" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #379683; -fx-border-color: #8EE4AF;" text="Last Name:" textFill="#edf5e1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="NatLab" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #379683; -fx-border-color: #8EE4AF;" text="Nationality:" textFill="#edf5e1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="PPLab" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #379683; -fx-border-color: #8EE4AF;" text="Profile Picture:" textFill="#edf5e1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="LoTLab" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #379683; -fx-border-color: #8EE4AF;" text="Learn or Teach?" textFill="#edf5e1" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font></Label>
+            <TextField fx:id="UN" prefHeight="40.0" GridPane.columnIndex="1" />
+            <PasswordField fx:id="PW" prefHeight="40.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="FN" prefHeight="40.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="LN" prefHeight="40.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="PP" mnemonicParsing="false" style="-fx-background-color: #8EE4AF; -fx-border-color: #379683;" text="Upload" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <ChoiceBox fx:id="Nat" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ChoiceBox fx:id="LoT" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="emaillab" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #379683; -fx-border-color: #8EE4AF;" text="Email:" textFill="#edf5e1" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="email" prefHeight="40.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />    
+         </children>
+      </GridPane>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="524.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="Createbut" layoutX="592.0" layoutY="406.0" mnemonicParsing="false" onAction="#changeScreenButtonPushed" style="-fx-border-color: #EDF5E1; -fx-background-color: #379683;" text="Button" textFill="#edf5e1">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font></Button>
+      <ImageView fx:id="title" fitHeight="100.0" fitWidth="450.0" layoutX="175.0" layoutY="14.0" pickOnBounds="true" />
+   </children>
+</AnchorPane>

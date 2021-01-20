@@ -1,0 +1,17 @@
+Color scheme:
+
+Dark blue / other text: #05386B arial 15 bold
+Dark green / buttons: #379683 
+Background: #5CDB95
+Light green: #8EE4AF
+Titles / text: #EDF5E1 verdana 16 bold
+Change background for information to be displayed
+
+
+Color scheme 2:
+
+Black: #0B0c10
+Gray: #1F2833
+Light Gray: #C5C6C7
+Teal: #66FCF1
+Dark Teal: #45A29E

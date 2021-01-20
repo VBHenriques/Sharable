@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #5CDB95;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="capstoneproject.TeachController">
+   <children>
+      <Label fx:id="title2" alignment="CENTER" layoutX="200.0" layoutY="115.0" prefHeight="30.0" prefWidth="400.0" text="Label" textFill="#379683">
+         <font>
+            <Font name="Verdana Bold" size="20.0" />
+         </font></Label>
+      <Button fx:id="createbut" layoutX="636.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeScreentoCreate" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #379683; -fx-border-color: #EDF5E1;" text="Create" textFill="#edf5e1">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font></Button>
+      <ImageView fx:id="title" fitHeight="100.0" fitWidth="450.0" layoutX="175.0" layoutY="14.0" pickOnBounds="true" />
+      <ImageView fx:id="backimg" fitHeight="75.0" fitWidth="75.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="backbut" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeScreenback" opacity="0.0" prefHeight="75.0" prefWidth="75.0" text="Button" />
+      <Button layoutX="175.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeScreenMain" opacity="0.0" prefHeight="100.0" prefWidth="450.0" text="Button" />
+      <GridPane layoutX="14.0" layoutY="186.0" prefHeight="400.0" prefWidth="700.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="166.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="166.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="166.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="typelab" alignment="CENTER" prefHeight="100.0" prefWidth="166.0" style="-fx-background-color: #379683; -fx-border-color: #ffffff;" text="Type of Class" textFill="#edf5e1">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="datelab1" alignment="CENTER" prefHeight="100.0" prefWidth="166.0" style="-fx-background-color: #379683; -fx-border-color: #ffffff;" text="Date" textFill="#edf5e1" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="timelab2" alignment="CENTER" prefHeight="100.0" prefWidth="166.0" style="-fx-background-color: #379683; -fx-border-color: #ffffff;" text="Time" textFill="#edf5e1" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="durlab" alignment="CENTER" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #379683; -fx-border-color: #ffffff;" text="Duration" textFill="#edf5e1" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="profitlab" alignment="CENTER" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #379683; -fx-border-color: #ffffff;" text="Profit" textFill="#edf5e1" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="type1" alignment="CENTER" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="date1" alignment="CENTER" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="time1" alignment="CENTER" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="type2" alignment="CENTER" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="date2" alignment="CENTER" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="time2" alignment="CENTER" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="type3" alignment="CENTER" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="date3" alignment="CENTER" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="time3" alignment="CENTER" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="type4" alignment="CENTER" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="date4" alignment="CENTER" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="time4" alignment="CENTER" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="type5" alignment="CENTER" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="date5" alignment="CENTER" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="time5" alignment="CENTER" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="type6" alignment="CENTER" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="date6" alignment="CENTER" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="time6" alignment="CENTER" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="dur1" alignment="CENTER" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="dur2" alignment="CENTER" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="dur3" alignment="CENTER" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="dur4" alignment="CENTER" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="dur5" alignment="CENTER" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="dur6" alignment="CENTER" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="profit1" alignment="CENTER" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="profit2" alignment="CENTER" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="profit3" alignment="CENTER" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="profit4" alignment="CENTER" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="profit5" alignment="CENTER" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="4" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="profit6" alignment="CENTER" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #ffffff; -fx-border-color: #379683;" textFill="#05386b" GridPane.columnIndex="4" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Button fx:id="v1" layoutX="714.0" layoutY="296.0" mnemonicParsing="false" onAction="#changeScreentoView1" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #379683; -fx-border-color: #EDF5E1;" text="View" textFill="#edf5e1">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="v2" layoutX="714.0" layoutY="346.0" mnemonicParsing="false" onAction="#changeScreentoView2" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #379683; -fx-border-color: #EDF5E1;" text="View" textFill="#edf5e1">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="v3" layoutX="714.0" layoutY="396.0" mnemonicParsing="false" onAction="#changeScreentoView3" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #379683; -fx-border-color: #EDF5E1;" text="View" textFill="#edf5e1">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="v4" layoutX="714.0" layoutY="446.0" mnemonicParsing="false" onAction="#changeScreentoView4" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #379683; -fx-border-color: #EDF5E1;" text="View" textFill="#edf5e1">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="v5" layoutX="714.0" layoutY="496.0" mnemonicParsing="false" onAction="#changeScreentoView5" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #379683; -fx-border-color: #EDF5E1;" text="View" textFill="#edf5e1">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="v6" layoutX="714.0" layoutY="546.0" mnemonicParsing="false" onAction="#changeScreentoView6" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #379683; -fx-border-color: #EDF5E1;" text="View" textFill="#edf5e1">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
